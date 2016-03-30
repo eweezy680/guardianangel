@@ -1,0 +1,1 @@
+GA is a small camera that orbits approximately 1m around your mobile phone and avoids collision. The stream is transferred to your mobile phone or may be relayed to our servers. This web interface will let you view or download your footage from our servers.
