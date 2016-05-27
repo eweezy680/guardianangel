@@ -10,8 +10,8 @@ var rbnewgame=function(){
 			var r=Math.floor(Math.random()*3);
 			if(r==0) {
 				var rbtemp4=Math.floor(Math.random()*5+1);
-				$("#rb"+i+j).css({"background":"url(http://guardianangel.googlecode.com/svn/branches/rbsnack/rb"+rbtemp4+".jpg)"}).html(rbtemp4);
-			}else $("#rb"+i+j).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb0.jpg')"}).html(0);
+				$("#rb"+i+j).css({"background":"url(https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb"+rbtemp4+".jpg)"}).html(rbtemp4);
+			}else $("#rb"+i+j).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb0.jpg')"}).html(0);
 		}
 	}
 	rbgofill();
@@ -27,7 +27,7 @@ var rbfull=function(){
 var rbgofill=function(){
   try{
 	rbcur=Math.floor(Math.pow(Math.random(),2)*9)+1;
-	$("#rbnext").css({"background":"url(http://guardianangel.googlecode.com/svn/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
+	$("#rbnext").css({"background":"url(https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
 	
 	var rbmovers=new Array();
 	for(var i=0; i<7; i++){
@@ -58,19 +58,19 @@ var rbgofill=function(){
 				  var rbtemp3=rarr[r];
 				  if(rbtemp3==0) {
 					  r=i-1;
-					  $("#rb"+r+j).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb9.jpg')"}).html(9);
+					  $("#rb"+r+j).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb9.jpg')"}).html(9);
 				  }else if(rbtemp3==1){
 					  r=i+1;
-					  $("#rb"+r+j).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb9.jpg')"}).html(9);
+					  $("#rb"+r+j).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb9.jpg')"}).html(9);
 				  }else if(rbtemp3==2){
 					  r=j-1;
-					  $("#rb"+i+r).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb9.jpg')"}).html(9);
+					  $("#rb"+i+r).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb9.jpg')"}).html(9);
 				  }else if(rbtemp3==3){
 					  r=j+1;
-					  $("#rb"+i+r).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb9.jpg')"}).html(9);
+					  $("#rb"+i+r).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb9.jpg')"}).html(9);
 				  }
 				}
-				  $("#rb"+i+j).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb0.jpg')"}).html(0);
+				  $("#rb"+i+j).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb0.jpg')"}).html(0);
 		
 	}
   }catch(e){
@@ -113,7 +113,7 @@ var rbcombine2=function(rbx,rby){
 		rbp.push(rbx+" "+rby);
 	var rbtemp2=rbval(rbx,rby);
 	if(rbcur==rbtemp2) {
-		$("#rb"+rbx+rby).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb0.jpg')"}).html(0);
+		$("#rb"+rbx+rby).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb0.jpg')"}).html(0);
 		if(rbx-1>=0){
 			rbcombine2(rbx-1,rby);
 		}
@@ -141,7 +141,7 @@ $(document).ready(function(){
 		  var rbx=parseInt($(this).attr("id").charAt(2));
 		  var rby=parseInt($(this).attr("id").charAt(3));
 		  if(rbval(rbx,rby)==0){
-			  $("#rb"+rbx+rby).css({"background":"url(http://guardianangel.googlecode.com/svn/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);//place
+			  $("#rb"+rbx+rby).css({"background":"url(https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);//place
 			  
 			  rbp=new Array();
 			  rbgt=0;
@@ -162,12 +162,12 @@ $(document).ready(function(){
 					rbcombine2(rbx,rby+1);
 				}
 				if(rbcur+1==10){
-					$("#rb"+rbx+rby).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb0.jpg')"}).html(0);
+					$("#rb"+rbx+rby).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb0.jpg')"}).html(0);
 				}else if(rbcur+1==9){
 					rbnewgame();
 				}else{
 					rbcur++;
-					$("#rb"+rbx+rby).css({"background":"url(http://guardianangel.googlecode.com/svn/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
+					$("#rb"+rbx+rby).css({"background":"url(https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
 					
 					rbp=new Array();//combo1
 					rbgt=0;
@@ -188,12 +188,12 @@ $(document).ready(function(){
 						  rbcombine2(rbx,rby+1);
 					  }
 					  if(rbcur+1==10){
-						  $("#rb"+rbx+rby).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb0.jpg')"}).html(0);
+						  $("#rb"+rbx+rby).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb0.jpg')"}).html(0);
 					  }else if(rbcur+1==9){
 						  rbnewgame();
 					  }else{
 						  rbcur++;
-						  $("#rb"+rbx+rby).css({"background":"url(http://guardianangel.googlecode.com/svn/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
+						  $("#rb"+rbx+rby).css({"background":"url(https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
 						  
 						  rbp=new Array();//combo2
 						  rbgt=0;
@@ -214,12 +214,12 @@ $(document).ready(function(){
 								rbcombine2(rbx,rby+1);
 							}
 							if(rbcur+1==10){
-								$("#rb"+rbx+rby).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb0.jpg')"}).html(0);
+								$("#rb"+rbx+rby).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb0.jpg')"}).html(0);
 							}else if(rbcur+1==9){
 								rbnewgame();
 							}else{
 								rbcur++;
-								$("#rb"+rbx+rby).css({"background":"url(http://guardianangel.googlecode.com/svn/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
+								$("#rb"+rbx+rby).css({"background":"url(https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb"+rbcur+".jpg)"}).html(rbcur);
 								
 								rbp=new Array();//combo3
 								rbgt=0;
@@ -240,12 +240,12 @@ $(document).ready(function(){
 									  rbcombine2(rbx,rby+1);
 								  }
 								  if(rbcur+1==10){
-									  $("#rb"+rbx+rby).css({"background":"url('http://guardianangel.googlecode.com/svn/branches/rbsnack/rb0.jpg')"}).html(0);
+									  $("#rb"+rbx+rby).css({"background":"url('https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb0.jpg')"}).html(0);
 								  }else if(rbcur+1==9){
 									  rbnewgame();
 								  }else{
 									  rbcur++;
-									  $("#rb"+rbx+rby).css({"background":"url(http://guardianangel.googlecode.com/svn/branches/rbsnack/rb"+(rbcur+1)+".jpg)"}).html(rbcur+1);
+									  $("#rb"+rbx+rby).css({"background":"url(https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/rbsnack/rb"+(rbcur+1)+".jpg)"}).html(rbcur+1);
 								  }
 								}
 							}
