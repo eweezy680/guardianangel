@@ -4,7 +4,7 @@
 var cblue_bws = navigator.userAgent.toLowerCase(), cblue_turnOffIE=true;//
 var cblue_doafter=function(){
 	if(cblue_turnOffIE&&cblue_bws.indexOf("msie")!=-1){
-	document.getElementById("cblue_word").innerHTML="<img id=\"cblue_toppop\" src=\"http://guardianangel.googlecode.com/svn/branches/cblue0im/01epipen.jpg\" width=\"400px\" height=\"62\"/>";
+	document.getElementById("cblue_word").innerHTML="<img id=\"cblue_toppop\" src=\"https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/cblue0im/01epipen.jpg\" width=\"400px\" height=\"62\"/>";
 	}
   cblue_set();
 };
@@ -100,7 +100,7 @@ var cblue_contin = function(){
 			  cblue_bh=cblue_bigh;
 			  cblue_bw=cblue_bigw;
 			  
-			  document.getElementById("cblue_toppop").src="http://guardianangel.googlecode.com/svn/branches/cblue0im/"+cblue_filename+".jpg";
+			  document.getElementById("cblue_toppop").src="https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/cblue0im/"+cblue_filename+".jpg";
 			  document.getElementById("cblue_toppop").style.float="none";
 			  if(cblue_bws.indexOf('msie')>-1||cblue_bws.indexOf('firefox')>-1){
 			  document.getElementById("cblue_toppop").style.position="";
@@ -109,7 +109,7 @@ var cblue_contin = function(){
 			  document.getElementById("cblue_toppop").style.height=cblue_toph+"px";
 			  
 	if(cblue_turnOffIE&&cblue_bws.indexOf("msie")==-1){
-			  document.getElementById("cblue_innerim").src="http://guardianangel.googlecode.com/svn/branches/cblue0im/"+cblue_filename+".jpg";
+			  document.getElementById("cblue_innerim").src="https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/cblue0im/"+cblue_filename+".jpg";
 			  document.getElementById("cblue_innerim").style.width=cblue_bigw+"px";
 			  document.getElementById("cblue_innerim").style.height=cblue_bigh+"px";
 			  document.getElementById("cblue_innerim").style.top=-Math.floor(0.5*cblue_bh-0.5*cblue_zoohh)+"px";
@@ -138,7 +138,7 @@ var cblue_contin = function(){
 			  cblue_bh=cblue_bigh;
 			  cblue_bw=cblue_bigw;
 			  
-			  document.getElementById("cblue_toppop").src="http://guardianangel.googlecode.com/svn/branches/cblue0im/"+cblue_filename+".jpg";
+			  document.getElementById("cblue_toppop").src="https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/cblue0im/"+cblue_filename+".jpg";
 			  document.getElementById("cblue_toppop").style.float="left";
 			  if(cblue_bws.indexOf('msie')>-1||cblue_bws.indexOf('firefox')>-1){
 			    document.getElementById("cblue_toppop").style.position="relative";
@@ -146,7 +146,7 @@ var cblue_contin = function(){
 			  document.getElementById("cblue_toppop").style.width=cblue_topw+"px";
 			  document.getElementById("cblue_toppop").style.height=400+"px";
 	if(cblue_turnOffIE&&cblue_bws.indexOf("msie")==-1){
-			  document.getElementById("cblue_innerim").src="http://guardianangel.googlecode.com/svn/branches/cblue0im/"+cblue_filename+".jpg";
+			  document.getElementById("cblue_innerim").src="https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/cblue0im/"+cblue_filename+".jpg";
 			  document.getElementById("cblue_innerim").style.width=cblue_bigw+"px";
 			  document.getElementById("cblue_innerim").style.height=cblue_bigh+"px";
 			  document.getElementById("cblue_innerim").style.top=(-Math.floor(0.5*cblue_hh))+"px";
