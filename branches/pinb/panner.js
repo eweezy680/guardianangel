@@ -143,10 +143,10 @@ var pa_makeTableHTML=function(myArray) {
         result += "<tr>";
         for(var j=0; j<myArray[i].length; j++){
 			if(myArray[i][j]>-11 && myArray[i][j]<11){
-            	result += "<td><img src=\"http://guardianangel.googlecode.com/svn/branches/pinb/pinb"+myArray[i][j]+".jpg\" /></td>";
+            	result += "<td><img src=\"https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/pinb/pinb"+myArray[i][j]+".jpg\" /></td>";
 			}else{
 				var sign=myArray[i][j]*10/Math.abs(myArray[i][j]);
-            	result += "<td><img src=\"http://guardianangel.googlecode.com/svn/branches/pinb/pinb"+sign+".jpg\" /></td>";
+            	result += "<td><img src=\"https://raw.githubusercontent.com/eweezy680/guardianangel/master/branches/pinb/pinb"+sign+".jpg\" /></td>";
 			}
         }
         result += "</tr>";
